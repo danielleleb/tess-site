@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.main-nav {
+  width: 12vw;
+  background: #417378;
+  font-family: "Raleway", sans-serif; }
+
+.main-nav__list {
+  margin: 0;
+  border: 1px solid black;
+  list-style: none;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0; }
+
+.main-nav__item {
+  padding-bottom: 20px; }
+
+.main-nav__link {
+  color: #F4F7D9;
+  text-decoration: none; }

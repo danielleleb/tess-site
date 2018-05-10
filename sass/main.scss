@@ -1,0 +1,54 @@
+// RESET
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// VARIABLES
+
+// COLOUR - https://color.adobe.com/Optimist-color-theme-10737664/edit/?copy=true&base=3&rule=Custom&selected=2&name=Copy%20of%20Optimist&mode=rgb&rgbvalues=0.4235294117647059,0.43137254901960786,0.34509803921568627,0.24313725490196078,0.25882352941176473,0.22745098039215686,0.2549019607843137,0.45098039215686275,0.47058823529411764,0.6431372549019608,0.8117647058823529,0.7450980392156863,0.9568627450980393,0.9686274509803922,0.8509803921568627&swatchOrder=0,1,2,3,4
+$colour-primary-text: #F4F7D9;
+$colour-nav-background: #417378; 
+
+// FONT
+
+$font-primary: 'Raleway', sans-serif;
+
+
+// NAVBAR
+
+.main-nav {
+    width: 12vw;
+    background: $colour-nav-background; 
+    font-family: $font-primary;
+}
+
+.main-nav__list {
+    margin: 0;
+    border: 1px solid black;
+    list-style: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.main-nav__item {
+    padding-bottom: 20px;
+}
+
+.main-nav__link {
+    color: $colour-primary-text;
+    text-decoration: none;
+}
