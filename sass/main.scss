@@ -30,11 +30,12 @@ $font-primary: 'Raleway', sans-serif;
     width: 12vw;
     background: $colour-nav-background; 
     font-family: $font-primary;
-}
+    position: fixed;
+    box-shadow: -1px 0px 20px 0px rgb(36, 36, 36);}
 
 .main-nav__list {
     margin: 0;
-    border: 1px solid black;
+    // border: 1px solid black;
     list-style: none;
     height: 100vh;
     display: flex;
@@ -51,4 +52,26 @@ $font-primary: 'Raleway', sans-serif;
 .main-nav__link {
     color: $colour-primary-text;
     text-decoration: none;
+}
+
+// IMAGE GRID
+
+.image-grid {
+    height: 100vh;
+    width: 88vw;
+    padding: 0;
+    margin-left: 12vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-grid__square {
+    margin: 0;
+    padding: 0;
+    // background-image: url('../images/attemptedresumepic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 22vw;
+    height: 33.3vh;
+    border: none;
 }
