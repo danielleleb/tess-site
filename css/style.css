@@ -48,9 +48,15 @@ body {
   position: fixed;
   margin-top: -100vh;
   box-shadow: -1px 0px 20px 0px #242424; }
+  .main-nav .main-nav__title {
+    margin-bottom: 180px;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 5px; }
 
 .main-nav__list {
-  margin: 0;
+  margin: 6vh 0 0 0;
+  justify-content: flex-start;
   list-style: none;
   height: 100vh;
   display: flex;
@@ -155,16 +161,21 @@ body {
   padding-top: 30px;
   background-color: rgba(255, 255, 255, 0.704);
   height: 45vh;
-  color: #3E423A; }
+  color: #3E423A;
+  text-align: center; }
   .contact-info p {
-    text-align: center;
     font-size: 20px; }
-  .contact-info .contact-info__icons {
-    text-align: center; }
-    .contact-info .contact-info__icons i {
-      padding-left: 30px;
-      margin-top: 20px;
-      font-size: 40px; }
+  .contact-info .contact-info__icons i {
+    margin-top: 20px;
+    font-size: 40px; }
+
+.footer-link p {
+  margin-top: 9vh;
+  color: #F4F7D9;
+  font-size: 16px; }
+
+.icon {
+  padding-left: 30px; }
 
 .contact-info__header {
   margin-top: 0;

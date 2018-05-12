@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -13,16 +13,20 @@
     <header>
         <nav class="main-nav">
             <ul class="main-nav__list complete-center">
-                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">Tess</a></li>
+                <div class="main-nav__title">
+                    <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">Tess</a></li>
+                </div>
                 <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">Portfolio</a></li>
-                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">About</a></li>
-                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">CV</a></li>
-                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#">Contact</a></li>
+                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#about">About</a></li>
+                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#resume">Resume</a></li>
+                <li class="main-nav__item" ><a class="main-nav__link link-no-style" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="landing portfolio">
+    <!-- <div id="portfolio"></div> -->
+
+    <section  class="landing portfolio">
 
         <div class="image-grid content-size-margin">
             <a href="#" class="no-space link-no-style">
@@ -123,7 +127,7 @@
 
     </section>
 
-    <section >
+    <section id="about">
 
         <div class="about content-size-margin">
             <h2>ABOUT</h2>
@@ -138,7 +142,7 @@
 
     <div class="parallax"></div>
     
-    <section class="resume content-size-margin">
+    <section id="resume" class="resume content-size-margin">
         <div class="resume-top-angle top-angle"></div>
 
         <div class="resume__content">
@@ -147,16 +151,17 @@
     </section>
 
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact-bottom-angle bottom-angle"></div>
         <div class="contact-info">
             <h2 class="contact-info__header content-size-margin">Contact</h2>
             <p class="content-size-margin">Recusandae accusantium soluta eos minima sapiente.</p>
             <div class="contact-info__icons content-size-margin">
                 <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fas fa-envelope-square"></i>
+                <i class="icon fab fa-instagram"></i>
+                <i class="icon fas fa-envelope-square"></i>
             </div>
+            <a href="http://www.daniellelc.com" class="footer-link  link-no-style"><p class="content-size-margin">Created by www.daniellelc.com.</p></a>
         </div>
     </section>
 
