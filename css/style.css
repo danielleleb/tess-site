@@ -6,7 +6,8 @@ html {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Raleway", sans-serif; }
 
 .no-space {
   padding: 0;
@@ -19,11 +20,33 @@ body {
   align-items: center;
   justify-content: center; }
 
+.content-size-margin {
+  width: 88vw;
+  margin-left: 12vw; }
+
+.top-angle {
+  padding: 0;
+  margin: -30vh 0 0 0;
+  border-left-width: 88vw;
+  border-top-width: 185px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  max-height: 0;
+  border-style: solid solid solid dashed; }
+
+.bottom-angle {
+  padding: 0;
+  margin: 0 0 0 12vw;
+  border-width: 0 88vw 185px 0;
+  border-style: solid solid solid none; }
+
 .main-nav {
+  z-index: 1;
   width: 12vw;
   background: #6C6E58;
   font-family: "Raleway", sans-serif;
   position: fixed;
+  margin-top: -100vh;
   box-shadow: -1px 0px 20px 0px #242424; }
 
 .main-nav__list {
@@ -42,11 +65,16 @@ body {
 
 .image-grid {
   height: 100vh;
-  width: 88vw;
   padding: 0;
   margin-left: 12vw;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1; }
 
 .image-grid__square {
   margin: 0;
@@ -54,8 +82,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 22vw;
-  height: 33.3vh;
-  border: none; }
+  height: 33.3vh; }
 
 .image-grid__square-info {
   display: none; }
@@ -70,3 +97,78 @@ body {
     text-align: center;
     color: #A4CFBE;
     font-family: "Raleway", sans-serif; }
+
+.about {
+  margin-top: 100vh;
+  height: 80vh;
+  margin-left: 12vw;
+  margin-bottom: 0;
+  background-color: white;
+  color: #3E423A;
+  box-shadow: 3px 4px 20px 0px #242424; }
+  .about h2 {
+    padding-top: 80px;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-align: center; }
+  .about hr {
+    width: 90px;
+    padding-top: 0;
+    text-align: center; }
+  .about h3 {
+    font-weight: 600;
+    text-align: center; }
+  .about p {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    line-height: 25px; }
+
+.about-bottom-angle {
+  border-color: transparent #ffffff;
+  position: absolute; }
+
+.parallax {
+  z-index: -2;
+  background-image: url("../images/hills.jpg");
+  height: 130vh;
+  margin-left: 12vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% -250px; }
+
+.resume-top-angle {
+  border-color: transparent #ffffff; }
+
+.resume__content {
+  min-height: 100vh;
+  background-color: white;
+  margin-top: -20px;
+  padding-bottom: 20px; }
+
+.contact-bottom-angle {
+  border-color: rgba(255, 255, 255, 0.704) white; }
+
+.contact-info {
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.704);
+  height: 45vh;
+  color: #3E423A; }
+  .contact-info p {
+    text-align: center;
+    font-size: 20px; }
+  .contact-info .contact-info__icons {
+    text-align: center; }
+    .contact-info .contact-info__icons i {
+      padding-left: 30px;
+      margin-top: 20px;
+      font-size: 40px; }
+
+.contact-info__header {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 3px; }
